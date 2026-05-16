@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.site-header {
+    width: 100%;
+    background-color: #808080;
+    color: #ffffff;
+    padding:30px 0; /* 高度 */
+}
+
+.header-content {
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.site-header .logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* 主体内容 */
+.main-content {
+    flex: 1; /* 占满 Header 和 Footer 之间的所有空间 */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer */
+.site-footer {
+    width: 100%;
+    background-color: #808080;
+    color: #ffffff;
+    padding: 25px 0;  /* 高度 */
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer 链接样式 */
+.site-footer a {
+    color: #ffffff; /* 白色文字，适配灰色背景 */
+    text-decoration: none; /* 去掉默认下划线 */
+    margin: 0 8px; /* 链接之间增加间距 */
+}
+
+.site-footer a:hover {
+    color: #e0e0e0; /* 鼠标悬浮变浅灰 */
+    text-decoration: underline; /* 悬浮显示下划线 */
+}
+
+/* 修复默认分隔符间距 */
+.site-footer p {
+    line-height: 1.5;
+}
